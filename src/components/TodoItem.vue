@@ -1,8 +1,5 @@
 <template>
-    <li
-    v-on:click="markAsDone"
-    v-if="item"
-    >
+    <li>
     <button @click="remove(item)">X</button>
     <input type="checkbox" v-model="item.done" :checked="item.done">
     <input type="text" v-model="item.content">
